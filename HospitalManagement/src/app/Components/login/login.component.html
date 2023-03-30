@@ -1,22 +1,17 @@
 <div class="Container">
     <div class="Div">
       <div>
-        <p class="span">Sign in</p>
+        <p class="span">Login Form</p>
       </div>
       <div>
-        <p class="font"> Create your Account </p>
+        <p class="font">Login to access your Account </p>
       </div>
       <div class="InnerDiv">
         <form>
+   
           <div>
-            <mat-form-field appearance="outline" class="email">
-              <input matInput placeholder="Name" formControlName="Name">
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field appearance="outline" class="email">
-              <input matInput placeholder="Email addresh" formControlName="email">
-             
+            <mat-form-field appearance="outline" class="email  custom-form-field">
+              <input matInput placeholder="Login" formControlName="email" >
             </mat-form-field>
           </div>
           <div>
@@ -29,12 +24,13 @@
           </div>
           <div class="matButton">
             <button class="mat-raised-button">
-              <img src="../../../assets/add_FILL0_wght400_GRAD0_opsz48.svg" alt="Register"> Register
+              <img style="transform: rotate(90deg);" src="../../../assets/input_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="Register"> Register
             </button> 
           </div>
+          <div class="fp">Forgot Password?</div>
           <div class="option">
-            <p>Have an account?</p>
-            <div class="basic">Sign up!</div>
+            <p>Don't have account?</p>
+            <div class="basic" routerLink="/signup">Sign up!</div>
           </div>
         </form>
       </div>
